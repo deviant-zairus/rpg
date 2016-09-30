@@ -18,3 +18,6 @@ private:
   string _name, _prompt;
   std::vector<std::pair<string, string>> _choice;
 };
+
+
+#endif "MENU_HPP"
