@@ -1,5 +1,5 @@
-#ifndef "MENU_HPP"
-#define "MENU_HPP"
+#ifndef "_MENU_HPP"
+#define "_MENU_HPP"
 #include <iostream>
 #include <vector>
 #include <string>
@@ -20,4 +20,4 @@ private:
 };
 
 
-#endif "MENU_HPP"
+#endif
