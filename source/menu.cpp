@@ -2,6 +2,12 @@
 #include <iostream>
 #include <vector>
 
+/*
+/ TODO: Implement so that it's more than numbered slelections
+/ Add more than one selection
+/ Set up the construct of the game vector as a menu
+/
+*/
 
 
 Menu::Menu(const string &name, const string &prompt, const std::vector<std::pair<string,string>> &choices) : _name(name), _prompt(prompt), _choices(choices)
