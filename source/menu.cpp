@@ -1,3 +1,8 @@
+#include "menu.hpp"
+#include <iostream>
+#include <vector>
+
+
 
 Menu::Menu(const string &name, const string &prompt, const std::vector<std::pair<string,string>> &choices) : _name(name), _prompt(prompt), _choices(choices)
 {}
