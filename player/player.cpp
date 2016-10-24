@@ -1,4 +1,3 @@
-#include <iostream>
 #include "player.hpp"
 
 player::player(std::string name, std::string area, std::string weapon, int level = 1, int EXP = 0)
@@ -14,7 +13,7 @@ player::player(std::string name, std::string area, std::string weapon, int level
 	setEXPReq();
 
 }
-//set values
+//Member function definitions
 void player::setName(std::string name)
 {
 	playerName = name;
@@ -52,7 +51,7 @@ void player::setEXPReq()
 	EXPReq = 70 + ((getLevel() * getLevel() * 35));
 }
 
-//get values
+//Member function constructors
 std::string player::getName()
 {
 	return playerName;
