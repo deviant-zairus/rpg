@@ -1,10 +1,12 @@
+#ifndef PLAYER_HPP
+#define PLAYER_HPP
+
 #include <iostream>
-#include <vector>
 
 class Player
 {
 public:
-	player(std::string, std::string, std::string, int, int, int);
+	player(std::string, std::string, std::string, int, int, int, int);
 
 	void setName(std::string);
 	void setArea(std::string);
@@ -12,9 +14,9 @@ public:
 
 	void setLevel(int);
 	void setEXP(int);
-
-	void setHealth();
-	void setMaxHealth();
+	void setHealth(int);
+	void setMaxHealth(int);
+	
 	void setDamage();
 	void setEXP();
 	void setEXPReq();
@@ -40,3 +42,5 @@ private:
 	int EXP;
 	int EXPreq;
 };
+
+#endif
