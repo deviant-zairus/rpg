@@ -1,5 +1,5 @@
-#ifndef MOBS_HPP 
-#define MOBS_HPP
+#ifndef MOB_HPP 
+#define MOB_HPP
 
 #include <iostream>
 
