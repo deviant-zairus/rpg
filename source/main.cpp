@@ -113,6 +113,16 @@ player calcEXP(player account, classMob monster)
 	return account;
 }
 
+player levelUp(player account)
+{
+	account.setLevel(account.getLevel()+1);
+	account.setEXPReq();
+	account.setMaxHealth();
+	account.setHealth(account.getMaxHealth());
+	std::cout<<"Level up! You are now level: "<<account.getLevel()<<"!\n";
+	return account;
+}
+
 					
 				       
 				       
