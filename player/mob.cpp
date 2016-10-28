@@ -19,7 +19,7 @@ void mob::setName(std::string name)
 }
 void mob::setArea(std::string area)
 {
-  mobName = name;
+  mobArea = area;
 }
 void mob::setSkill(std::string skill)
 {
