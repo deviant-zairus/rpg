@@ -1,5 +1,5 @@
-#include "_mobs.hpp"
-#include "_player.hpp"
+#include "_mobs.h"
+#include "_player.h"
 #include <iostream>
 #include <cstdlib>
 #include <windows.h>
