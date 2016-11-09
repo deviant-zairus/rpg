@@ -1,4 +1,4 @@
-#include "playerFormat.h"
+#include "_player.h"
 #include <iostream>
 
 player::player(std::string name, std::string area, std::string weapon, int level, int exp, int expRequired, int health, int maxHealth, int strength, int constitution, int intelligence, int wisdom, int dexterity, int perception)
