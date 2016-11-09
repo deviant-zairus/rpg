@@ -1,5 +1,5 @@
-#ifndef _PLAYERFORMAT_H
-#define _PLAYERFORMAT_H
+#ifndef _PLAYER_H
+#define _PLAYER_H
 
 #include <iostream>
 #include <string>
