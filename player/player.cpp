@@ -1,19 +1,25 @@
-#include "player.hpp"
+#include "playerFormat.h"
+#include <iostream>
 
-player::player(std::string name, std::string area, std::string weapon, int level = 1, int EXP = 0)
+player::player(std::string name, std::string area, std::string weapon, int level, int exp, int expRequired, int health, int maxHealth, int strength, int constitution, int intelligence, int wisdom, int dexterity, int perception)
 {
-	setName(name);
-	setArea(area);
-	setWeapon(weapon);
-	setLevel(level);
-	setEXP(EXP);
-	setMaxHealth();
-	setHealth(playerMaxHealth);
-	setDamage();
-	setEXPReq();
-
+	std::string setName(name);
+	std::string setArea(area);
+	std::string setWeapon(weapon);
+	int setLevel(level);
+	int setExp(exp);
+	int setExpRequired(expRequired);
+	int setMaxHealth(maxHealth);
+	int setHealth(maxHealth);
+	int setStrength(strength);
+	int setConstitution(constitution);
+	int setPerception(perception);
+	int setDexterity(dexterity);
+	int setIntelligence(intelligence);
+	int setWisdom(wisdom);
 }
-//Member function definitions
+
+//member mutators
 void player::setName(std::string name)
 {
 	playerName = name;
@@ -28,30 +34,51 @@ void player::setWeapon(std::string weapon)
 }
 void player::setLevel(int level)
 {
-	playerLevel = level
+	playerLevel = level;
+}
+void player::setExp(int exp)
+{
+	playerExp = exp;
+}
+void player::setExpRequired(int expRequired)
+{
+	playerExpRequired = (123 * (1 + getLevel()));
+}
+void player::setMaxHealth(int maxHealth)
+{
+	playerMaxHealth = (20 + (3 * getConstitution()));
 }
 void player::setHealth(int health)
 {
 	playerHealth = health;
 }
-void player::setMaxHealth()
+void player::setStrength(int strength)
 {
-	playerMaxHealth = (100 * getLevel());
+	playerStrength = strength;
 }
-void player::setDamage()
+void player::setConstitution(int constitution)
 {
-	playerDamage = (30 * getLevel());
+	playerConstitution = constitution;
 }
-void player::setEXP(int _EXP)
+void player::setPerception(int perception)
 {
-	EXP = _EXP;
+	playerPerception = perception;
 }
-void player::setEXPReq()
+void player::setDexterity(int dexterity)
 {
-	EXPReq = 70 + ((getLevel() * getLevel() * 35));
+	playerDexterity = dexterity;
+}
+void player::setIntelligence(int intelligence)
+{
+	playerIntelligence = intelligence;
+}
+void player::setWisdom(int wisdom)
+{
+	playerWisdom = wisdom;
 }
 
-//Member function constructors
+
+//member accesors
 std::string player::getName()
 {
 	return playerName;
@@ -68,23 +95,43 @@ int player::getLevel()
 {
 	return playerLevel;
 }
-int player::getHealth()
+int player::getExp()
 {
-	return playerHealth;
+	return playerExp;
+}
+int player::getExpRequired()
+{
+	return playerExpRequired;
 }
 int player::getMaxHealth()
 {
 	return playerMaxHealth;
 }
-int player::getDamage()
+int player::getHealth()
 {
-	return playerDamage;
+	return playerHealth;
 }
-int player::getEXP()
+int player::getStrength()
 {
-	return playerEXP;
+	return playerStrength;
 }
-int player::getEXPReq()
+int player::getConstitution()
 {
-	return EXPReq;
+	return playerConstitution;
+}
+int player::getPerception()
+{
+	return playerPerception;
+}
+int player::getDexterity()
+{
+	return playerDexterity;
+}
+int player::getIntelligence()
+{
+	return playerIntelligence;
+}
+int player::getWisdom()
+{
+	return playerWisdom;
 }
