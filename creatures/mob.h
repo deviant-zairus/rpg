@@ -49,7 +49,7 @@ public:
     int mobDexterity;
     int mobPerception;
     
-}
+};
 
 #endif
     
