@@ -18,7 +18,7 @@ public:
     void setMaxHealth(int);
     void setStrength(int);
     void setConstitution(int);
-    void setIntelligence(int;
+    void setIntelligence(int);
     void setWisdom(int);
     void setDexterity(int);
     void setPerception(int);
