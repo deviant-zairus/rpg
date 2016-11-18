@@ -1,8 +1,8 @@
 #include "creatures/mob.h"
-#include "creature/player.h"
+#include "creatures/player.h"
 #include <iostream>
 #include <cstdlib>
-#include <windows.h>
+
 
 player battle(pplayer account);
 player calcEXP(player account, classMob creature);
