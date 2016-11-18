@@ -1,5 +1,5 @@
-#include "_mobs.h"
-#include "_player.h"
+#include "creatures/mob.h"
+#include "creature/player.h"
 #include <iostream>
 #include <cstdlib>
 #include <windows.h>
